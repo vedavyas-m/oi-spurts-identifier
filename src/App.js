@@ -28,13 +28,21 @@ function App() {
   }, [value]);
   return (
     <div className="App">
-      <h1>OI SPURTS IDENTIFIER</h1>
+      <h1 style={{ color: "red" }}>OI SPURTS IDENTIFIER</h1>
       <a
         href="https://www.nseindia.com/api/live-analysis-oi-spurts-contracts"
         target="_blank"
         rel="noreferrer"
       >
         OI SPURTS DATA
+      </a>
+      <br />
+      <a
+        href="https://www.nseindia.com/market-data/oi-spurts"
+        target="_blank"
+        rel="noreferrer"
+      >
+        nse oi spurts data
       </a>
       <div>
         <textarea
