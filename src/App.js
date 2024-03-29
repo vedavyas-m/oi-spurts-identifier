@@ -8,9 +8,9 @@ function App() {
       try {
         let arr = JSON.parse(value).filter((item) => {
           return (
-            item.pChange > 50 &&
-            item.pChangeInOI > 50 &&
-            item.instrumentType === "OPTIDX"
+            item.pChange > 50 && item.pChangeInOI > 50
+            //  &&
+            // item.instrumentType === "OPTIDX"
           );
           // return (
           //   item.pChange > 10 &&
@@ -20,6 +20,7 @@ function App() {
         });
         console.log(arr);
         setValuesToBeDisplayed(arr);
+        setValue("");
       } catch ({ error }) {
         alert("some error in  the string");
       }
